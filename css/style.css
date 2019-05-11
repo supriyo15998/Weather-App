@@ -1,0 +1,15 @@
+.container {
+	background: #ccc;
+	text-align: center;
+	margin: 2%;
+	padding: 2%;
+}
+.weather {
+	font-size: 22px;
+	margin: 0;
+}
+.temp {
+	font-size: 60px;
+	margin: 0;
+	font-weight: bold;
+}
