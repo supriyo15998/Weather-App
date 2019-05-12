@@ -4,8 +4,13 @@
 	margin: 2%;
 	padding: 2%;
 }
+.city {
+	font-size: 24px;
+	font-weight: bold;
+}
 .weather {
-	font-size: 22px;
+	font-size: 28px;
+	font-weight: bolder;
 	margin: 0;
 }
 .temp {
