@@ -4,8 +4,10 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=
 	var temp = Math.floor(data.main.temp - 273.00) + "&#8451; / " + Math.floor(((data.main.temp - 273.00)*1.80)+32) + "&#8457;";
 	var weather = data.weather[0].main;
 	var city_json = data.name;
+	var sunrise = data.sys.sunrise.toUTCString().slice(-11,-4);
 	$('.icon').attr('src', icon);
 	$('.city').append(city_json);
 	$('.temp').append(temp);
 	$('.weather').append(weather);
+	$('.sunrise').append(sunrise);
 });
